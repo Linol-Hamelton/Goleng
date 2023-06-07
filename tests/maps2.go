@@ -18,7 +18,7 @@ func main() {
 	}
 
 	for _, city := range groupCity[100] {
-		_, exists := cityPopulation["E"]
+		_, exists := cityPopulation[city]
 		if !exists {
 			delete(cityPopulation, city)
 		}
